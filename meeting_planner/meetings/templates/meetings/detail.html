@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Meeting: {{meeting.title}}</title>
-</head>
-<body>
+{% extends 'base.html' %}}
+{% block content %}
+{% block title %}Welcome{% endblock %}
+{% load static %}
 <h1>{{meeting.title}}</h1>
 <p>
     This meeting has been scheduled on {{meeting.date}}, at
@@ -13,6 +10,7 @@
 <p>
     <a href="{% url 'index' %}">Return to Home</a>
 </p>
+<a href="{% url 'room_list' %}">Rooms List</a>
+{% endblock %}}
 
-</body>
-</html>
+

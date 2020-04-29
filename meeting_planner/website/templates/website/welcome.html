@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome!</title>
-</head>
-<body>
+{% extends 'base.html' %}}
+{% block content %}}
+{% block title %}Welcome{% endblock %
+{% load static %}
 <h1>Welcome to the Meeting Planner!</h1>
 <p>
     This is the demo application for the course by Singh
@@ -12,6 +9,7 @@
     on <a href="https://www.pluralsight.com">
     Pluralsight</a>.
 </p>
+<img alt="Winter is here" src="{% static 'website/got.jpg' %}" width="300px">
 <h2>
     <ol>
         {% for meeting in meetings%}
@@ -24,5 +22,4 @@
     </ol>
 </h2>
 <a href="{% url 'room_list' %}">Rooms List</a>
-</body>
-</html>
+{% endblock %}}

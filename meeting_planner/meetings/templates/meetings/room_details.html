@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Room Details</title>
-</head>
-<body>
+{% extends 'base.html' %}}
+{% block content %}
+{% block title %}Welcome{% endblock %}
+{% load static %}
 <h1>Room List:</h1>
 {% for room in rooms %}
 <li>
     {{room}}
 </li>
 {% endfor %}
-</body>
-</html>
+{% endblock %}}
+
+
