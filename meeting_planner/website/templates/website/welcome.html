@@ -1,6 +1,6 @@
 {% extends 'base.html' %}}
 {% block content %}}
-{% block title %}Welcome{% endblock %
+{% block title %}Welcome{% endblock %}
 {% load static %}
 <h1>Welcome to the Meeting Planner!</h1>
 <p>
@@ -22,4 +22,5 @@
     </ol>
 </h2>
 <a href="{% url 'room_list' %}">Rooms List</a>
+<a href="{% url 'new' %}">Add new Meeting</a>
 {% endblock %}}
